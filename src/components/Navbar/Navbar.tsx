@@ -10,7 +10,7 @@ const Navbar = () => {
         <nav className='navbar'>
             <Hamburger size={30} color='#fff' toggled={isOpen} toggle={setOpen} />
 
-            <h1 className='nav-h1'>José Alvarez</h1>
+            <h2 className='nav-h2'></h2>
         </nav>
     )
 }

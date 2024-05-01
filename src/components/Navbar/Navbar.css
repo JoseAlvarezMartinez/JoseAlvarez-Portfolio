@@ -1,16 +1,16 @@
-.nav-h1 {
+.nav-h2 {
     color: #ffffff;
     font-weight: 400;
     font-size: 1.5rem;
 }
 
-.nav-h1::after,
-.nav-h1::before {
+.nav-h2::after,
+.nav-h2::before {
     content: "/>";
     color: rgb(161, 60, 255);
 }
 
-.nav-h1::before {
+.nav-h2::before {
     content: "<";
 }
 
