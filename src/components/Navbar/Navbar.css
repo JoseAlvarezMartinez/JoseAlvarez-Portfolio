@@ -1,0 +1,21 @@
+.nav-h1 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.nav-h1::after,
+.nav-h1::before {
+    content: "/>";
+    color: rgb(161, 60, 255);
+}
+
+.nav-h1::before {
+    content: "<";
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem .8rem;
+}
