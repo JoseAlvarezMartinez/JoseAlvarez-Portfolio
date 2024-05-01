@@ -9,12 +9,14 @@ header {
     background-size: cover;
     position: relative;
 }
-.header-container{
+
+.header-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 80%;
 }
+
 .background-black {
     position: absolute;
     width: 100%;
@@ -26,24 +28,25 @@ header {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-top: 0;
+    text-align: center;
 }
 
 .header-h2 span {
     font-weight: 200;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .avatar-img {
     width: 90%;
-    max-width: 12rem;
+    max-width: 16rem;
 
     display: block;
     margin: 0 auto;
@@ -86,4 +89,35 @@ header {
 .arrow-icon {
     width: 100%;
     margin-top: 1rem;
+}
+
+/*Sobre Mi*/
+.sobre-mi-section {
+    background-color: #0d0d0d;
+}
+.sobre-mi-h2 {
+    margin: 0;
+    color: #fff;
+    padding: 1.5rem 0;
+    font-weight: 500;
+}
+
+.sobre-mi-parrafo {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 2rem;
+    line-height: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mi-parrafo span {
+    margin: 1.5rem 0;
+}
+
+.sobre-mi-container {
+    width: 80%;
+    max-width: 20rem;
+    margin: 0 auto;
 }

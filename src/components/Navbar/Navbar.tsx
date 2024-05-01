@@ -8,9 +8,10 @@ const Navbar = () => {
 
     return (
         <nav className='navbar'>
-            <Hamburger size={30} color='#fff' toggled={isOpen} toggle={setOpen} />
 
             <h2 className='nav-h2'></h2>
+
+            <Hamburger size={30} color='#fff' toggled={isOpen} toggle={setOpen} />
         </nav>
     )
 }

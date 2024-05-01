@@ -17,5 +17,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: .4rem .8rem;
+    background-color: rgba(255, 255, 255, 0.04);
 }
