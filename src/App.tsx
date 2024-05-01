@@ -12,17 +12,31 @@ function App() {
         <div className="background-black">
           <Navbar />
 
-          <img className="avatar-img" src={Avatar} alt="" />
+          <div className="header-container">
+            <img className="avatar-img" src={Avatar} alt="Imagen de Avatar" />
 
-          <h2 className="header-h2">José Alvarez <span>Desarrollador Front End</span></h2>
+            <h2 className="header-h2">José Alvarez <span>Desarrollador Front End</span></h2>
 
-          <div className="header-container-buttons">
-            <a className="descargar-cv-button" href="#">Descargar CV</a>
-            <CiLinkedin size={"2rem"} color={"#fff"} />
-            <FaGithub size={"1.7rem"} color={"#fff"} />
+            <div className="header-container-buttons">
+              <a className="descargar-cv-button" href="#">Descargar CV</a>
+              <div className="redes-buttons">
+                <a
+                  className="redes-icons"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/jos%C3%A9-alvarez-martinez-621404211/">
+                  <CiLinkedin size={"2.3rem"} color={"#fff"} />
+                </a>
+                <a
+                  className="redes-icons"
+                  target="_blank"
+                  href="https://github.com/JoseAlvarezMartinez">
+                  <FaGithub size={"1.9rem"} color={"#fff"} />
+                </a>
+              </div>
+            </div>
+
+            <IoIosArrowDown className="arrow-icon" size={"2rem"} color={"#fff"} />
           </div>
-
-          <IoIosArrowDown size={"2rem"} color={"#fff"} />
         </div>
       </header>
     </>
