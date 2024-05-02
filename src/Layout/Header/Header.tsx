@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar/Navbar"
 import Avatar from "../../assets/avatar.png"
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
+// import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
     return (
         <header>

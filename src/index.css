@@ -118,9 +118,10 @@ header {
 }
 
 /*Sobre Mi*/
-.sobre-mi-section{
+.sobre-mi-section {
     padding: 2rem 0;
 }
+
 .sobre-mi-parrafo {
     color: #fff;
     margin: 0;
@@ -289,17 +290,37 @@ footer {
     }
 
     /* Proyectos */
-    .proyectos-responsive-responsive {
+    .proyectos-responsive {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    footer{
+
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .footer-buttons{
+
+    .footer-buttons {
         padding-bottom: 0;
+    }
+}
+
+@media only screen and (min-width:800px) {
+
+    /* Header */
+    .avatar-img {
+        max-width: 20rem;
+    }
+
+    .header-h2 {
+        font-size: 1.8rem;
+    }
+    /* Proyectos */
+    .proyectos-responsive{
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 2rem;
+        row-gap: 0;
     }
 }
