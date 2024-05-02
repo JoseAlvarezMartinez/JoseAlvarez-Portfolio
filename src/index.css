@@ -2,6 +2,22 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: #0d0d0d;
+}
+
+.sections-h2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(161, 60, 255);
+    text-decoration-thickness: .1rem;
+    text-underline-offset: 1rem;
+
+    margin: 0;
+    color: #fff;
+    padding: 1.5rem 0;
+    font-weight: 500;
+}
+
 /* Header estilos*/
 header {
     height: 98vh;
@@ -21,7 +37,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #000000c9;
+    background-color: #000000a6;
 }
 
 .header-h2 {
@@ -92,15 +108,6 @@ header {
 }
 
 /*Sobre Mi*/
-.sobre-mi-section {
-    background-color: #0d0d0d;
-}
-.sobre-mi-h2 {
-    margin: 0;
-    color: #fff;
-    padding: 1.5rem 0;
-    font-weight: 500;
-}
 
 .sobre-mi-parrafo {
     color: #fff;
@@ -120,4 +127,55 @@ header {
     width: 80%;
     max-width: 20rem;
     margin: 0 auto;
+}
+
+/* Experiencia */
+.experiencia-h2 {
+    text-decoration-color: #fff;
+    text-decoration-thickness: .05rem;
+    padding-top: 0;
+    text-align: center;
+}
+
+.experiencia-container {
+    width: 80%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.article-experiencia {
+    background-color: rgba(22, 20, 20, 0.706);
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    margin: 1rem 0;
+    transition: transform .3s;
+}
+
+.article-experiencia:hover {
+    transform: scale(1.03);
+}
+
+.experiencia-cargo,
+.experiencia-anio,
+.experiencia-descripcion {
+    color: #fff;
+}
+
+.experiencia-descripcion,
+.experiencia-anio {
+    font-weight: 300;
+}
+
+.experiencia-anio {
+    margin-top: 0.3rem;
+    font-size: .8rem;
+}
+
+.experiencia-cargo {
+    margin-bottom: 0;
+}
+
+.experiencia-descripcion {
+    font-size: .9rem;
+    line-height: 1.2rem;
 }
