@@ -2,7 +2,7 @@ import { experiencia } from "../../data/db"
 
 const Experiencia = () => {
     return (
-        <section className="experiencia-container">
+        <section className="sections-containers">
             <h2 className="sections-h2 experiencia-h2">Experiencia</h2>
 
             {experiencia.map(exp => (

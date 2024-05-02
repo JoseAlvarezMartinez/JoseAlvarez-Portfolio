@@ -1,7 +1,7 @@
 const SobreMi = () => {
   return (
     <section className="sobre-mi-section">
-      <div className="sobre-mi-container">
+      <div className="sections-containers">
         <h2 className="sections-h2">Sobre Mi</h2>
 
         <p className="sobre-mi-parrafo">

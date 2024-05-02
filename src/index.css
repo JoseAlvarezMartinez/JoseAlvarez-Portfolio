@@ -6,10 +6,16 @@ body {
     background-color: #0d0d0d;
 }
 
+.sections-containers {
+    width: 80%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
 .sections-h2 {
     text-decoration: underline;
     text-decoration-color: rgb(161, 60, 255);
-    text-decoration-thickness: .1rem;
+    text-decoration-thickness: .05rem;
     text-underline-offset: 1rem;
 
     margin: 0;
@@ -123,12 +129,6 @@ header {
     margin: 1.5rem 0;
 }
 
-.sobre-mi-container {
-    width: 80%;
-    max-width: 20rem;
-    margin: 0 auto;
-}
-
 /* Experiencia */
 .experiencia-h2 {
     text-decoration-color: #fff;
@@ -137,22 +137,12 @@ header {
     text-align: center;
 }
 
-.experiencia-container {
-    width: 80%;
-    max-width: 20rem;
-    margin: 0 auto;
-}
-
 .article-experiencia {
     background-color: rgba(22, 20, 20, 0.706);
     border-radius: .5rem;
     padding: .5rem 2rem;
     margin: 1rem 0;
-    transition: transform .3s;
-}
 
-.article-experiencia:hover {
-    transform: scale(1.03);
 }
 
 .experiencia-cargo,
@@ -178,4 +168,38 @@ header {
 .experiencia-descripcion {
     font-size: .9rem;
     line-height: 1.2rem;
+}
+
+/*Proyectos*/
+.proyecto-container {
+    background-color: rgba(31, 28, 28, 0.71);
+    margin: 2rem 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0px 5px 10px 0px rgba(5, 5, 5, 0.9);
+    transition: transform .3s;
+}
+
+.proyecto-container:hover{
+    transform:scale(1.05)
+}
+
+.proyecto-imagen {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.proyecto-url {
+    text-decoration: none;
+}
+
+.proyecto-titulo {
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+
+    padding: 1rem .5rem;
+    font-weight: 300;
+    text-align: center;
 }
