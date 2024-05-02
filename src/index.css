@@ -47,7 +47,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #000000a6;
+    background-color: #000000c6;
 }
 
 .header-h2 {
@@ -68,6 +68,66 @@ header {
     font-weight: 200;
     text-transform: capitalize;
     font-size: 1.3rem;
+}
+
+.navbar-inactiva {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* Opacidad inicial */
+    }
+
+    to {
+        opacity: 1;
+        /* Opacidad final */
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        /* Opacidad inicial */
+    }
+
+    to {
+        opacity: 0;
+        /* Opacidad final */
+    }
+}
+
+.navbar-activa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 98vh;
+    width: 50%;
+
+    background-color: rgb(0, 0, 0);
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    animation: fadeIn .5s forwards;
+    /* Animación de opacidad */
+
+}
+
+.navbar-activa a {
+    text-decoration: none;
+    padding-left: 2rem;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    margin: .5rem 0;
 }
 
 .avatar-img {
@@ -141,7 +201,6 @@ header {
     text-decoration-color: #fff;
     text-decoration-thickness: .05rem;
     padding-top: 0;
-    text-align: center;
 }
 
 .article-experiencia {
@@ -241,6 +300,45 @@ footer {
 @media only screen and (min-width: 600px) {
 
     /* Header */
+    .burger-icon {
+        display: none;
+    }
+    .navbar{
+        padding: .4rem 2rem;
+    }
+    .navbar-inactiva {
+        display: flex;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }  
+    .navbar-inactiva a{
+        text-decoration: none;
+        margin: 0 .5rem;
+        padding-bottom: .4rem;
+        font-weight: 500;
+
+        position: relative;
+        color: #fff;
+    }
+    .navbar-inactiva a::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(161, 60, 255);;
+        transform: scaleX(0);
+        transform-origin: top left;
+        transition: transform 0.3s ease;
+    }
+    .navbar-inactiva a:hover::before {
+        transform: scaleX(1);
+      }
     .header-container {
         flex-direction: row;
         align-items: center;
@@ -305,6 +403,12 @@ footer {
     .footer-buttons {
         padding-bottom: 0;
     }
+    .footer-buttons a{
+        transition: transform .3s;
+    }
+    .footer-buttons a:hover{
+        transform: scale(1.2);
+    }
 }
 
 @media only screen and (min-width:800px) {
@@ -317,8 +421,9 @@ footer {
     .header-h2 {
         font-size: 1.8rem;
     }
+
     /* Proyectos */
-    .proyectos-responsive{
+    .proyectos-responsive {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 2rem;
         row-gap: 0;
