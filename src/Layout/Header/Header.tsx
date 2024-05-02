@@ -15,7 +15,7 @@ const Header = () => {
                     <h2 className="header-h2">José Alvarez Martinez<span>Desarrollador Front End</span></h2>
 
                     <div className="header-container-buttons">
-                        <a className="descargar-cv-button" href="#">Descargar CV</a>
+                        <a target="_blank" className="descargar-cv-button" href="https://drive.google.com/file/d/1w3PJpocXokdCyrUyv805b1FbCQl-M0by/view?usp=sharing">Descargar CV</a>
                         <div className="redes-buttons">
                             <a
                                 className="redes-icons"

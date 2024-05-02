@@ -59,3 +59,10 @@ export const proyectos: Proyectos[] = [
     },
 
 ]
+
+
+export const servicios = [
+    {
+        
+    }
+]
