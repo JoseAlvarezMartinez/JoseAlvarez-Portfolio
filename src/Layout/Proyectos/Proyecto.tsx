@@ -5,7 +5,10 @@ const Proyecto = () => {
         <main className="sections-containers">
 
             <h2 className="sections-h2">Proyectos</h2>
-            {proyectos.map(proyecto => <CardProyecto key={proyecto.nombre} proyecto={proyecto} />)}
+
+            <div className="proyectos-responsive-responsive">
+                {proyectos.map(proyecto => <CardProyecto key={proyecto.nombre} proyecto={proyecto} />)}
+            </div>
         </main>
     )
 }
