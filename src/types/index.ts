@@ -9,5 +9,6 @@ export interface Proyectos {
 export interface Experiencia {
     cargo: string,
     anio: number,
-    descripcion: string
+    descripcion: string,
+    clase:string
 }

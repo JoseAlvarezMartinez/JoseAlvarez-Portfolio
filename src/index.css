@@ -234,3 +234,48 @@ footer {
     gap: 1rem;
     padding-bottom: 1rem;
 }
+
+@media only screen and (min-width: 600px) {
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        height: 80%;
+    }
+    .avatar-img{
+        margin: 0;
+        max-width: 14rem;
+    }
+    .redes-buttons{
+        margin-left: 1rem;
+    }
+    .header-container-buttons {
+        flex-direction: row;
+    }
+
+    .container-presentacion-personal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sections-containers {
+        max-width: unset;
+        width: 80%;
+    }
+
+    .sobre-mi-parrafo {
+        width: 25rem;
+    }
+
+    .experiencias-container-responsive {
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experiencias-container-responsive :last-child {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}

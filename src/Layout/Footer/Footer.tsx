@@ -1,10 +1,7 @@
 import Avatar from "../../assets/avatar.png"
-import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { CiMail } from "react-icons/ci";
-
-
 
 const Footer = () => {
     return (
