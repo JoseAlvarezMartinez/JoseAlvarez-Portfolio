@@ -2,7 +2,7 @@ import { experiencia } from "../../data/db"
 
 const Experiencia = () => {
     return (
-        <section className="sections-containers">
+        <section className="sections-containers-experiencia">
             <h2 className="sections-h2 experiencia-h2">Experiencia</h2>
 
             <div className="experiencias-container-responsive">

@@ -64,9 +64,45 @@ export const proyectos: Proyectos[] = [
 
 ]
 
-
-export const servicios = [
+interface Tecnologias {
+    [key: string]: string
+}
+export const tecnologias: Tecnologias[] = [
     {
+        tecnologiaID: "html",
+        img: "https://i.ibb.co/rFy2mPv/html-Logo-removebg-preview.png"
+    },
+    {
+        tecnologiaID: "css",
+        img: "https://i.ibb.co/vLyJmvh/cssLogo.png"
+    },    
+    {
+        tecnologiaID: "bootstrap",
+        img: "https://i.ibb.co/t4dQhx3/bootstrap-Logo-removebg-preview.png"
+    },
+    {
+        tecnologiaID: "sass",
+        img: "https://i.ibb.co/r4KzVpx/sass-Logo-removebg-preview.png"
+    },
+    {
+        tecnologiaID: "javascript",
+        img: "https://i.ibb.co/XFS47jZ/jsLogo.png"
+    },
+    {
+        tecnologiaID: "typescript",
+        img: "https://i.ibb.co/DpCcDNG/typescript-Logo.png"
+    },
+    {
+        tecnologiaID: "react",
+        img: "https://i.ibb.co/HK0NWXz/react-Logo.png"
+    },
+    {
+        tecnologiaID: "redux",
+        img: "https://i.ibb.co/ypSbbt9/images-removebg-preview.png"
+    },
+    {
+        tecnologiaID: "zustand",
+        img: "https://i.ibb.co/b7HyVDR/zustand-logo.png"
+    },
 
-    }
 ]
