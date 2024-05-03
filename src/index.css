@@ -10,7 +10,8 @@ body {
     background-position: 60%;
 }
 
-.sections-containers,.sections-containers-experiencia {
+.sections-containers,
+.sections-containers-experiencia {
     width: 80%;
     max-width: 20rem;
     margin: 0 auto;
@@ -178,18 +179,11 @@ header {
 
 /*Sobre Mi*/
 
-
-
-.tecnologias{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
 .tecnologia-img {
-    width: 10rem; /* Ancho deseado */
-    height: 10rem; /* Alto deseado */
+    width: 10rem;
+    /* Ancho deseado */
+    height: 10rem;
+    /* Alto deseado */
     object-fit: contain;
 
     filter: grayscale(1);
@@ -200,10 +194,11 @@ header {
     filter: grayscale(0);
 }
 
-.zustand{
+.zustand {
     width: 13rem;
     object-fit: cover;
 }
+
 .sobre-mi-section {
     padding: 2rem 0;
 }
@@ -323,6 +318,21 @@ footer {
     padding-bottom: 1rem;
 }
 
+.slides {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar,
+.slides-productos::-webkit-scrollbar {
+    display: none;
+}
+
 @media only screen and (min-width: 600px) {
 
     /* Header */
@@ -399,7 +409,14 @@ footer {
 
     /* Sobre Mi */
 
-    .sections-containers,.sections-containers-experiencia {
+    .slides {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .sections-containers,
+    .sections-containers-experiencia {
         max-width: unset;
         width: 80%;
     }
@@ -407,10 +424,17 @@ footer {
     .sobre-mi-parrafo {
         width: 26rem;
     }
+
     .tecnologia-img {
-        width: 8rem; /* Ancho deseado */
-        height: 8rem; /* Alto deseado */
+        width: 8rem;
+        /* Ancho deseado */
+        height: 8rem;
+        /* Alto deseado */
     }
+    .zustand{
+        width: 10rem;
+    }
+
     /* Experiencia */
     .experiencias-container-responsive {
         display: grid;
@@ -459,9 +483,7 @@ footer {
     .header-h2 {
         font-size: 1.8rem;
     }
-    .tecnologias{
-        justify-content: start;
-    }
+
     /* Proyectos */
     .proyectos-responsive {
         grid-template-columns: repeat(3, 1fr);
@@ -470,9 +492,9 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1060px){
-    .sections-containers{
+@media only screen and (min-width: 1060px) {
+    .sections-containers {
         display: flex;
         flex-direction: row-reverse;
-       }
+    }
 }

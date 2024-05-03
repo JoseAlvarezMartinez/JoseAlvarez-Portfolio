@@ -16,14 +16,13 @@ const SobreMi = () => {
 
         <div className="sobre-mi-inferior">
           <h2 className="sections-h2">Tecnologías</h2>
-          <section className="tecnologias">
-
-
-            {tecnologias.map(tecnologia => (
-              <figcaption key={tecnologia.tecnologiaID} className="probando">
-                <img className={`tecnologia-img ${tecnologia.tecnologiaID}`} src={tecnologia.img} />
-              </figcaption>
-            ))}
+          <section className="tecnologias slides">
+            <div className="slides">
+              {tecnologias.map(tecnologia => (
+                <div key={tecnologia.tecnologiaID}>
+                  <img className={`tecnologia-img ${tecnologia.tecnologiaID}`} src={tecnologia.img} />
+                </div>
+              ))}</div>
 
           </section>
         </div>
