@@ -319,6 +319,7 @@ footer {
 }
 
 .slides {
+    margin-top: .5rem;
     display: grid;
     grid-auto-flow: column;
     gap: 0.5rem;
