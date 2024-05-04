@@ -1,7 +1,9 @@
 * {
     font-family: "Montserrat", sans-serif;
 }
-
+a{
+    scroll-behavior: smooth;
+}
 body {
     background-image: url(./assets/background-mobile.jpg);
     background-repeat: no-repeat;
@@ -180,18 +182,11 @@ header {
 /*Sobre Mi*/
 
 .tecnologia-img {
-    width: 10rem;
+    width: 7rem;
     /* Ancho deseado */
-    height: 10rem;
+    height: 7rem;
     /* Alto deseado */
     object-fit: contain;
-
-    filter: grayscale(1);
-    transition: filter .3s;
-}
-
-.tecnologia-img:hover {
-    filter: grayscale(0);
 }
 
 .zustand {
@@ -426,12 +421,7 @@ footer {
         width: 26rem;
     }
 
-    .tecnologia-img {
-        width: 8rem;
-        /* Ancho deseado */
-        height: 8rem;
-        /* Alto deseado */
-    }
+
     .zustand{
         width: 10rem;
     }
@@ -477,10 +467,6 @@ footer {
 @media only screen and (min-width:800px) {
 
     /* Header */
-    .avatar-img {
-        max-width: 20rem;
-    }
-
     .header-h2 {
         font-size: 1.8rem;
     }
@@ -491,6 +477,15 @@ footer {
         margin-bottom: 2rem;
         row-gap: 0;
     }
+    .tecnologia-img {   
+        filter: grayscale(1);
+        transition: filter .3s;
+    }
+    
+    .tecnologia-img:hover {
+        filter: grayscale(0);
+    }
+    
 }
 
 @media only screen and (min-width: 1060px) {
