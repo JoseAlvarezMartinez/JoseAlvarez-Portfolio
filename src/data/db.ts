@@ -27,7 +27,7 @@ parte del equipo de desarrollo que contribuyó al diseño e implementación de d
 export const proyectos: Proyectos[] = [
     {
         nombre: "Hisluma TV",
-        link: "https://clever-jalebi-6a8acd.netlify.app/",
+        link: "https://hisluma.netlify.app/accueil",
         imagen: "https://i.ibb.co/b3sxTxY/Captura-de-pantalla-2024-05-02-110308.png",
         id: "HislumaProject"
     },
